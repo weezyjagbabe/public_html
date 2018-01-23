@@ -1,0 +1,15 @@
+admin/*
+controllers/transactionForms.php
+controllers/userController.php
+models/classes/*
+models/functions/*
+models/logs/*
+.access
+.hist
+.htaccess
+.log
+.map196
+test/*
+merchants/*
+merchant/*
+corporate/*

@@ -1,0 +1,133 @@
+/* CSS SET UP */
+@font-face {
+ font-family: 'OpenSansRegular';
+ src: url('../css/fonts/opensans-regular-webfont.eot');
+ src: url('../css/fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../css/fonts/opensans-regular-webfont.woff') format('woff'), url('../css/fonts/opensans-regular-webfont.ttf') format('truetype'), url('../css/fonts/opensans-regular-webfont.svg#OpenSansRegular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+body{
+	font-family: 'OpenSansRegular';
+	padding-top: 70px;
+	background-color: #0A3254;
+}
+
+.box{
+  margin: 10px auto 30px auto;
+  width: 750px;
+  height: 50px;
+  color:#FFFFFF;
+}
+
+.container
+{
+	margin: 0 auto;
+	width: 950px;
+	text-align:center;
+	
+}
+
+a.logo
+{
+	width: 500px;
+	border: none;
+	cursor: pointer;
+}
+
+.container h1
+{
+	font-size: 65px;
+	color:#FFFFFF;
+	font-weight: bolder;
+	padding: 10px 0;
+	margin: 0;
+}
+
+.container .search-info 
+{
+	width: 650px;
+	text-align:center;
+	margin: 0 auto;
+}
+
+.container .search-info p
+{
+	font-size: 18px;
+	color:#FFFFFF;
+	padding: 0;
+	margin: 0;
+	line-height: 25px;
+	font-weight: lighter;
+}
+
+
+/* Search 4 - appear looking glass */
+.container-4{
+	overflow: hidden;
+	width: 750px;
+	vertical-align: middle;
+	white-space: nowrap;
+  /* position: relative; */
+}
+.container-4 input#search{
+	width: 750px;
+	height: 70px;
+	background: #FFFFFF;
+	border: none;
+	font-size: 25px;
+	font-family: 'OpenSansRegular';
+	float: left;
+	color: #000000;
+	padding-left: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+  
+	-webkit-transition: all .55s ease;
+	-moz-transition: all .55s ease;
+	-ms-transition: all .55s ease;
+	-o-transition: all .55s ease;
+	transition: all .55s ease;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+.container-4 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+.container-4 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+.container-4 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+
+.container-4 button.icon {
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+	background: #0A3254;
+	height: 70px;
+	width: 50px;
+	color: #FFFFFF;
+	opacity: 0;
+	font-size: 25pt;
+	-webkit-transition: all .55s ease;
+	-moz-transition: all .55s ease;
+	-ms-transition: all .55s ease;
+	-o-transition: all .55s ease;
+	transition: all .55s ease;
+	cursor: pointer;
+}
+
+  /* ANIMATION EFFECT */
+  .container-4:hover button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline:none;
+    opacity: 1;
+    margin-left: -50px;
+  }

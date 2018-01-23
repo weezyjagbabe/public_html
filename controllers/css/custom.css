@@ -1,0 +1,292 @@
+.floatLeft
+{
+	float: left;
+}
+.floatRight
+{
+	float: right;
+}
+
+.curveTopLeft 
+{
+	border-top-left-radius: 3px;
+}
+
+.curveTopRight 
+{
+	border-top-right-radius: 3px;
+}
+
+.curveBottomRight 
+{
+	border-bottom-right-radius: 3px;
+}
+
+.curveBottomLeft
+{
+	border-bottom-left-radius: 3px;
+}
+
+.curveTopLeftAndRight 
+{
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.curvebottomLeftAndRight 
+{
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+
+.tellerBGColor
+{
+	background-color: #0A3254;
+	color: #FFFFFF;
+}
+.checkbox {
+	overflow:auto;
+	resize:none;
+	float:left;
+	width: 20px;
+	font-family: 'OpenSansRegular';
+	margin: 6px 4px 0 -3px;
+}
+
+.agree {
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+.agree a {
+	color: #0A3254;
+}
+
+.agree a:hover {
+	color: #0A3254;
+}
+
+
+
+.panel-body2
+{
+	position: relative;
+	padding: 15px;
+	background-color: #0A3254;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.panel-body2 h1
+{
+	color: #FFFFFF;
+}
+
+
+#rig {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+#rig li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:50%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rig-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rig-img {
+    display:block;
+    width: 100%;
+    height: 80%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rig li:hover .rig-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rig-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #3DC0F1 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rig li:hover .rig-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rig-text {
+    display:block;
+    padding: 5px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:14px;
+    font-weight:bold;
+    font-family:"Noto Sans",sans-serif;
+    font-weight:normal!important;
+    top:20%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rig li:hover .rig-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rig li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rig li {
+        width:50%;
+    }
+}
+
+
+
+
+#rigHome {
+    max-width:900px;
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+}
+#rigHome li {
+    display: inline-block;
+    *display:inline;/*for IE6 - IE7*/
+    width:50%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+/* The wrapper for each item */
+.rigHome-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.rigHome-img {
+    display:block;
+    width: 100%;
+    height: 80%;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+#rigHome li:hover .rigHome-img {
+    transform:scale(1.05);
+}
+        
+/* If have the overlay layer */
+.rigHome-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #0A3254 url(img/link.png) no-repeat center 20%;
+    background-size:50px 50px;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#rigHome li:hover .rigHome-overlay {
+    opacity:0.8;
+}
+
+/* If have captions */
+.rigHome-text {
+    display:block;
+    padding: 5px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:14px;
+    font-weight:bold;
+    font-family:"Noto Sans",sans-serif;
+    font-weight:normal!important;
+    top:20%;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+    transform:translateY(-20px);
+    transition:all .3s;
+}
+#rigHome li:hover .rigHome-text {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #rigHome li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #rigHome li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 550px) {
+    #rigHome li {
+        width:33.33%;
+    }
+}
